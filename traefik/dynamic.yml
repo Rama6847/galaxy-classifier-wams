@@ -1,0 +1,73 @@
+# dynamic.yml
+http:
+  routers:
+    ui:
+      entryPoints:
+        - web
+      rule: "PathPrefix(`/`)"
+      service: ui-service
+      priority: 10
+    
+    api:
+      entryPoints:
+        - web
+      rule: "PathPrefix(`/api`)"
+      service: api-service
+      middlewares:
+        - strip-api-prefix
+      priority: 20
+    
+    auth:
+      entryPoints:
+        - web
+      rule: "PathPrefix(`/auth`)"
+      service: auth-service
+      middlewares:
+        - strip-auth-prefix
+      priority: 30
+    
+    worker:
+      entryPoints:
+        - web
+      rule: "PathPrefix(`/worker`)"
+      service: worker-service
+      middlewares:
+        - strip-worker-prefix
+      priority: 40
+
+  middlewares:
+    strip-api-prefix:
+      stripPrefix:
+        prefixes:
+          - "/api"
+    
+    strip-auth-prefix:
+      stripPrefix:
+        prefixes:
+          - "/auth"
+    
+    strip-worker-prefix:
+      stripPrefix:
+        prefixes:
+          - "/worker"
+
+  services:
+    ui-service:
+      loadBalancer:
+        servers:
+          - url: "http://host.docker.internal:8080"
+    
+    api-service:
+      loadBalancer:
+        servers:
+          - url: "http://host.docker.internal:8000"
+    
+    auth-service:
+      loadBalancer:
+        servers:
+          - url: "http://host.docker.internal:8001"
+    
+    worker-service:
+      loadBalancer:
+        servers:
+          - url: "http://host.docker.internal:8002"

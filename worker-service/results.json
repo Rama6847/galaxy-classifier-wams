@@ -1,0 +1,42 @@
+{
+  "7ca08ee0-2369-43d1-bf46-38cb04341e21": {
+    "classe": "Galaxies lisses rondes",
+    "indice_classe": 2,
+    "confiance": 0.9444,
+    "status": "completed",
+    "timestamp": "2026-04-28T22:40:05.235851",
+    "task_id": "7ca08ee0-2369-43d1-bf46-38cb04341e21"
+  },
+  "444d2d43-2bdc-4f20-b1d7-2a61e7d78fbf": {
+    "classe": "Galaxies lisses rondes",
+    "indice_classe": 2,
+    "confiance": 0.9444,
+    "status": "completed",
+    "timestamp": "2026-04-28T22:40:05.255269",
+    "task_id": "444d2d43-2bdc-4f20-b1d7-2a61e7d78fbf"
+  },
+  "21b33e4f-1f0a-4910-a23d-0d31d5e9f33a": {
+    "classe": "Galaxies lisses rondes",
+    "indice_classe": 2,
+    "confiance": 0.9444,
+    "status": "completed",
+    "timestamp": "2026-04-28T22:47:33.882546",
+    "task_id": "21b33e4f-1f0a-4910-a23d-0d31d5e9f33a"
+  },
+  "cf7ba3b6-04f0-4a07-97c6-678a39a50ca8": {
+    "classe": "Galaxies lisses rondes",
+    "indice_classe": 2,
+    "confiance": 0.9444,
+    "status": "completed",
+    "timestamp": "2026-04-28T22:47:49.420729",
+    "task_id": "cf7ba3b6-04f0-4a07-97c6-678a39a50ca8"
+  },
+  "ed1fd397-d8f9-4980-9525-3e1e1c8ef944": {
+    "classe": "Galaxies spirales serr\u00e9es",
+    "indice_classe": 6,
+    "confiance": 0.5181,
+    "status": "completed",
+    "timestamp": "2026-04-28T22:48:18.745708",
+    "task_id": "ed1fd397-d8f9-4980-9525-3e1e1c8ef944"
+  }
+}
